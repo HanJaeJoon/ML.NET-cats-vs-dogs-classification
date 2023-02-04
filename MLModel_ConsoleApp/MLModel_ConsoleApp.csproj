@@ -6,14 +6,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="images\pepper1.jpg" />
-    <None Remove="images\pepper2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="images\pepper1.jpg" />
-    <Content Include="images\pepper2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="1.7.1" />
     <PackageReference Include="Microsoft.ML.Vision" Version="1.7.1" />
     <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.3.1" />
@@ -29,13 +21,5 @@
       <DependentUpon>MLModel.mbconfig</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Update="images\pepper1.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Update="images\pepper2.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 </Project>
